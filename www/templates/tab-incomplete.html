@@ -1,0 +1,15 @@
+<ion-view view-title="Incomplete" ng-init="getIncompletedTasks()">
+  <ion-content class="padding">
+    <div class="list card" ng-repeat="task in incompleteTasks track by $index">
+      <div class="item item-divider">
+          <span ng-bind="task.title"></span>
+      </div>
+      <div class="item item-body">
+          <strong>Title: <span ng-bind="task.title"></span></strong>
+          <p>
+            <span ng-bind="task.content"></span>
+          </p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
